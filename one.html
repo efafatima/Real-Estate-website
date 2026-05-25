@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFA Housing Society | Luxury Real Estate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">EFA <span>Housing</span></a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover Your Dream Home</h1>
+                <p>Luxury living redefined. Explore our premium collection of properties in the most sought-after locations.</p>
+                <div class="btn-group">
+                    <a href="#properties" class="btn">Explore Properties</a>
+                    <a href="#contact" class="btn btn-outline">Contact Us</a>
+                </div>
+                
+                <!-- Search Form -->
+                <div class="search-form">
+                    <h3 class="form-title">Find Your Perfect Property</h3>
+                    <form id="propertySearchForm">
+                        <div class="form-group">
+                            <div class="form-control">
+                                <label for="propertyType">Property Type</label>
+                                <select id="propertyType" name="propertyType">
+                                    <option value="">All Types</option>
+                                    <option value="house">Houses</option>
+                                    <option value="apartment">Apartments</option>
+                                    <option value="villa">Villas</option>
+                                    <option value="plot">Plots</option>
+                                </select>
+                            </div>
+                            <div class="form-control">
+                                <label for="location">Location</label>
+                                <select id="location" name="location">
+                                    <option value="">All Locations</option>
+                                    <option value="south-beach">South Beach</option>
+                                    <option value="downtown">Downtown</option>
+                                    <option value="hillside">Hillside</option>
+                                    <option value="waterfront">Waterfront</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-control">
+                                <label for="minPrice">Min Price ($)</label>
+                                <input type="number" id="minPrice" name="minPrice" placeholder="30,000">
+                            </div>
+                            <div class="form-control">
+                                <label for="maxPrice">Max Price ($)</label>
+                                <input type="number" id="maxPrice" name="maxPrice" placeholder="500,000">
+                            </div>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="btn">Find Properties</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section class="section" id="properties">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Properties</h2>
+                <p>Explore our curated selection of premium properties in exclusive locations.</p>
+            </div>
+            <div class="properties-grid">
+                <!-- Property 1 -->
+                <div class="property-card">
+                    <div class="property-slider">
+                        <div class="property-slides">
+                            <div class="property-slide">
+                                <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury Villa">
+                            </div>
+                            <div class="property-slide">
+                                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury Villa Interior">
+                            </div>
+                            <div class="property-slide">
+                                <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury Villa Garden">
+                            </div>
+                        </div>
+                        <div class="slider-nav">
+                            <div class="slider-dot active" data-slide="0"></div>
+                            <div class="slider-dot" data-slide="1"></div>
+                            <div class="slider-dot" data-slide="2"></div>
+                        </div>
+                    </div>
+                    <span class="property-badge">Featured</span>
+                    <div class="property-content">
+                        <div class="property-price">$450,000 <span>| PKR 125,000,000</span></div>
+                        <h3 class="property-title">Modern Luxury Villa</h3>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> South Beach, Karachi
+                        </div>
+                        <div class="property-features">
+                            <div class="feature">
+                                <i class="fas fa-bed"></i> 5 Beds
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bath"></i> 4 Baths
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-ruler-combined"></i> 3500 sq.ft
+                            </div>
+                        </div>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="property-card">
+                    <div class="property-slider">
+                        <div class="property-slides">
+                            <div class="property-slide">
+                                <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Modern Apartment">
+                            </div>
+                            <div class="property-slide">
+                                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Apartment Interior">
+                            </div>
+                        </div>
+                        <div class="slider-nav">
+                            <div class="slider-dot active" data-slide="0"></div>
+                            <div class="slider-dot" data-slide="1"></div>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$250,000 <span>| PKR 70,000,0000</span></div>
+                        <h3 class="property-title">Premium Downtown Apartment</h3>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> Downtown, Lahore
+                        </div>
+                        <div class="property-features">
+                            <div class="feature">
+                                <i class="fas fa-bed"></i> 3 Beds
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bath"></i> 2 Baths
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-ruler-combined"></i> 1800 sq.ft
+                            </div>
+                        </div>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="property-card">
+                    <div class="property-slider">
+                        <div class="property-slides">
+                            <div class="property-slide">
+                                <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Hillside Villa">
+                            </div>
+                            <div class="property-slide">
+                                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Villa Interior">
+                            </div>
+                            <div class="property-slide">
+                                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1558&q=80" >
+                 alt="Villa Pool">
+                            </div>
+                        </div>
+                        <div class="slider-nav">
+                            <div class="slider-dot active" data-slide="0"></div>
+                            <div class="slider-dot" data-slide="1"></div>
+                            <div class="slider-dot" data-slide="2"></div>
+                        </div>
+                    </div>
+                    <span class="property-badge">New Listing</span>
+                    <div class="property-content">
+                        <div class="property-price">$650,000 <span>| PKR 180,000,00000</span></div>
+                        <h3 class="property-title">Hillside Luxury Villa</h3>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> Hillside, Islamabad
+                        </div>
+                        <div class="property-features">
+                            <div class="feature">
+                                <i class="fas fa-bed"></i> 6 Beds
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bath"></i> 5 Baths
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-ruler-combined"></i> 5000 sq.ft
+                            </div>
+                        </div>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Property 4 -->
+                <div class="property-card">
+                    <div class="property-slider">
+                        <div class="property-slides">
+                            <div class="property-slide">
+                                <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Waterfront Property">
+                            </div>
+                            <div class="property-slide">
+                                <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Waterfront View">
+                            </div>
+                        </div>
+                        <div class="slider-nav">
+                            <div class="slider-dot active" data-slide="0"></div>
+                            <div class="slider-dot" data-slide="1"></div>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$350,000 <span>| PKR 95,000,0000</span></div>
+                        <h3 class="property-title">Waterfront Apartment</h3>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> Waterfront, Karachi
+                        </div>
+                        <div class="property-features">
+                            <div class="feature">
+                                <i class="fas fa-bed"></i> 4 Beds
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bath"></i> 3 Baths
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-ruler-combined"></i> 2500 sq.ft
+                            </div>
+
+                            <div class="feature">
+                    <i class="fas fa-couch"></i>
+                    <span>Furnished</span>
+                </div>
+                        </div>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+
+
+                <!-- 5 -->
+                 <div class="property-card">
+                    
+
+
+                        <div class="property-slider">
+            <div class="property-slides">
+                <div class="property-slide">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80" alt="Luxury House Front View">
+                </div>
+                <div class="property-slide">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1558&q=80"  alt="Luxury House Living Room">
+                </div>
+                <div class="property-slide">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury House Kitchen">
+                </div>
+            </div>
+  
+
+            <div class="slider-nav">
+                <div class="slider-dot active" data-slide="0"></div>
+                <div class="slider-dot" data-slide="1"></div>
+                <div class="slider-dot" data-slide="2"></div>
+            </div>
+        </div>
+                    <div class="property-content">
+                        <div class="property-price">$350,000 <span>| PKR 95,000,00000</span></div>
+                        <h3 class="property-title">Luxury Modern Villa</h3>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>DHA Phase 6, Karachi
+                        </div>
+                        <div class="property-features">
+                            <div class="feature">
+                                <i class="fas fa-bed"></i> 4 Beds
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bath"></i> 3 Baths
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-ruler-combined"></i> 2500 sq.ft
+                            </div>
+                            <div class="feature">
+                    <i class="fas fa-couch"></i>
+                    <span>Furnished</span>
+                </div>
+                        </div>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+
+
+                 <!-- <div class="property-card">
+                    <div class="property-slider">
+                        <div class="property-slides">
+                            <div class="property-slide">
+                                <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Waterfront Property">
+                            </div>
+                            <div class="property-slide">
+                                <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Waterfront View">
+                            </div>
+                        </div>
+                        <div class="slider-nav">
+                            <div class="slider-dot active" data-slide="0"></div>
+                            <div class="slider-dot" data-slide="1"></div>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">$350,000 <span>| PKR 95,000,000</span></div>
+                        <h3 class="property-title">Waterfront Apartment</h3>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> Waterfront, Karachi
+                        </div>
+                        <div class="property-features">
+                            <div class="feature">
+                                <i class="fas fa-bed"></i> 4 Beds
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bath"></i> 3 Baths
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-ruler-combined"></i> 2500 sq.ft
+                            </div>
+                        </div>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="property-card">
+        
+        
+        <div class="property-slider">
+            <div class="property-slides">
+                <div class="property-slide">
+                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury Apartment Living Area">
+                </div>
+                <div class="property-slide">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury Apartment Kitchen">
+                </div>
+                <div class="property-slide">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1558&q=80" alt="Luxury Apartment Bedroom">
+                </div>
+            </div>
+            <div class="slider-nav">
+                <div class="slider-dot active" data-slide="0"></div>
+                <div class="slider-dot" data-slide="1"></div>
+                <div class="slider-dot" data-slide="2"></div>
+            </div>
+        </div>
+        
+        <div class="property-content">
+            <div class="property-price">$425,000 <span>| PKR 118,000,000</span></div>
+            <h3 class="property-title">Skyline Luxury Apartment</h3>
+            <div class="property-location">
+                <i class="fas fa-map-marker-alt"></i> Clifton, Karachi
+            </div>
+            
+            <div class="property-features">
+                <div class="feature">
+                    <i class="fas fa-bed"></i>
+                    <span>3 Bedrooms</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-bath"></i>
+                    <span>2 Bathrooms</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-ruler-combined"></i>
+                    <span>1800 sq.ft</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-couch"></i>
+                    <span>Furnished</span>
+                </div>
+            </div>
+            
+            <a href="#" class="btn">
+                <i class="fas fa-calendar-check"></i> View Details
+            </a>
+            
+           
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+
+        
+            </div>
+        </div>
+
+
+
+
+
+        
+
+        <div class="modal-overlay" id="propertyModal">
+        <div class="property-modal">
+            <div class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="modal-content" id="modalContent">
+                <!-- Content will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose EFA Housing</h2>
+                <p>We provide the best service and properties to meet your luxury living expectations.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Premium Properties</h3>
+                    <p>Carefully selected properties in the most exclusive locations with top-notch amenities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive pricing with flexible payment plans to suit your financial needs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safe & Secure</h3>
+                    <p>Gated communities with 24/7 security and advanced surveillance systems.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Our dedicated team is always available to assist you with any queries or concerns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="white">What Our Clients Say</h2>
+                <p class="white">Hear from our satisfied customers about their experience with EFA Housing.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>EFA Housing helped me find my dream home in South Beach. Their professionalism and attention to detail made the entire process smooth and stress-free.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ahmed Khan">
+                        </div>
+                        <div class="author-info">
+                            <h4>Ahmed Khan</h4>
+                            <p>South Beach Resident</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>As an expat, I was worried about finding the right property in Pakistan. EFA Housing understood my needs and found me the perfect apartment in Downtown.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Downtown Apartment Owner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>The Hillside Villa we purchased through EFA Housing exceeded all our expectations. Their after-sales service is exceptional.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Ali Raza">
+                        </div>
+                        <div class="author-info">
+                            <h4>Ali Raza</h4>
+                            <p>Hillside Villa Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with our team for any inquiries or to schedule a property viewing.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Our Office</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Address</h4>
+                            <p>123 Seaside Boulevard, South Beach, Karachi, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+923001234567">+92 300 1234567</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@efahousing.com">info@efahousing.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Working Hours</h4>
+                            <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About EFA Housing</h3>
+                    <p>EFA Housing Society is a premier real estate developer committed to delivering luxury living spaces with world-class amenities.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Property Types</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Houses</a></li>
+                        <li><a href="#">Apartments</a></li>
+                        <li><a href="#">Villas</a></li>
+                        <li><a href="#">Plots</a></li>
+                        <li><a href="#">Commercial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Locations</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">South Beach</a></li>
+                        <li><a href="#">Downtown</a></li>
+                        <li><a href="#">Hillside</a></li>
+                        <li><a href="#">Waterfront</a></li>
+                        <li><a href="#">Gated Communities</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 EFA Housing Society. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+
+        // Header Scroll Effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                    }
+                }
+            });
+        });
+
+        // Property Slider Functionality
+        document.querySelectorAll('.property-slider').forEach(slider => {
+            const slides = slider.querySelector('.property-slides');
+            const dots = slider.querySelectorAll('.slider-dot');
+            let currentSlide = 0;
+            const slideCount = dots.length;
+            
+            // Set up dot click events
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentSlide = index;
+                    updateSlider();
+                });
+            });
+            
+            // Auto slide change
+            let slideInterval = setInterval(nextSlide, 5000);
+            
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slideCount;
+                updateSlider();
+            }
+            
+            function updateSlider() {
+                slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+                
+                // Update active dot
+                dots.forEach((dot, index) => {
+                    if (index === currentSlide) {
+                        dot.classList.add('active');
+                    } else {
+                        dot.classList.remove('active');
+                    }
+                });
+                
+                // Reset interval
+                clearInterval(slideInterval);
+                slideInterval = setInterval(nextSlide, 5000);
+            }
+            
+            // Pause on hover
+            slider.addEventListener('mouseenter', () => {
+                clearInterval(slideInterval);
+            });
+            
+            slider.addEventListener('mouseleave', () => {
+                clearInterval(slideInterval);
+                slideInterval = setInterval(nextSlide, 5000);
+            });
+        });
+
+        // Property Search Form
+        const propertySearchForm = document.getElementById('propertySearchForm');
+        if (propertySearchForm) {
+            propertySearchForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const propertyType = document.getElementById('propertyType').value;
+                const location = document.getElementById('location').value;
+                const minPrice = document.getElementById('minPrice').value;
+                const maxPrice = document.getElementById('maxPrice').value;
+                
+                // In a real application, this would filter properties from an API
+                // For demo, we'll just scroll to properties and show an alert
+                document.getElementById('properties').scrollIntoView({ behavior: 'smooth' });
+                
+                let filterMessage = 'Showing properties';
+                if (propertyType) filterMessage += ` of type: ${propertyType}`;
+                if (location) filterMessage += ` in location: ${location}`;
+                if (minPrice || maxPrice) {
+                    filterMessage += ` with price range: $${minPrice || '0'} - $${maxPrice || '∞'}`;
+                }
+                
+                alert(filterMessage);
+            });
+        }
+
+        // Contact Form Submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const message = document.getElementById('message').value;
+                
+                // In a real application, this would send the data to a server
+                console.log('Form submitted:', { name, email, phone, message });
+                alert('Thank you for your message, ' + name + '! We will contact you soon.');
+                contactForm.reset();
+            });
+        }
+
+        // Animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.section-title, .property-card, .feature-card, .testimonial-card');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.animation = 'fadeInUp 1s ease forwards';
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+    
+
+        // Previous JavaScript remains the same until the end
+
+        // Property Modal Functionality
+        const propertyModal = document.getElementById('propertyModal');
+        const modalContent = document.getElementById('modalContent');
+        const modalClose = document.getElementById('modalClose');
+
+        // Property data (in a real app, this would come from an API)
+        const properties = [
+            {
+                id: 1,
+                title: "Modern Luxury Villa",
+                type: "villa",
+                location: "South Beach, Karachi",
+                price: 450000,
+                pricePkr: 125000000,
+                description: "This stunning modern villa offers luxury living at its finest. With panoramic ocean views, spacious interiors, and premium finishes, this property is perfect for those seeking the ultimate in comfort and style.",
+                bedrooms: 5,
+                bathrooms: 4,
+                area: 3500,
+                yearBuilt: 2020,
+                features: [
+                    { icon: "swimming-pool", text: "Swimming Pool" },
+                    { icon: "garage", text: "2 Car Garage" },
+                    { icon: "tree", text: "Landscaped Garden" },
+                    { icon: "utensils", text: "Gourmet Kitchen" },
+                    { icon: "wifi", text: "Smart Home System" },
+                    { icon: "snowflake", text: "Central AC" }
+                ],
+                images: [
+                    "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+                    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+                    "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+                    "https://images.unsplash.com/photo-1600566752227-8f3b3a4a87a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                ]
+            },
+            {
+                id: 2,
+                title: "Premium Downtown Apartment",
+                type: "apartment",
+                location: "Downtown, Lahore",
+                price: 250000,
+                pricePkr: 70000000,
+                description: "Located in the heart of the city, this premium apartment offers convenience and luxury. With high-end finishes, stunning city views, and access to building amenities, this is urban living at its best.",
+                bedrooms: 3,
+                bathrooms: 2,
+                area: 1800,
+                yearBuilt: 2018,
+                features: [
+                    { icon: "concierge-bell", text: "24/7 Concierge" },
+                    { icon: "dumbbell", text: "Fitness Center" },
+                    { icon: "swimming-pool", text: "Rooftop Pool" },
+                    { icon: "elevator", text: "High-Speed Elevators" },
+                    { icon: "wifi", text: "Fiber Internet" },
+                    { icon: "parking", text: "Secure Parking" }
+                ],
+                images: [
+                    "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+                    "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+                    "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1558&q=80",
+                    "https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                ]
+            },
+            {
+                id: 3,
+                title: "Hillside Luxury Villa",
+                type: "villa",
+                location: "Hillside, Islamabad",
+                price: 650000,
+                pricePkr: 18000000000,
+                description: "Perched in Islamabad's hills, this luxury villa delivers unmatched elegance, privacy, and panoramic views in an exclusive enclave.",
+                bedrooms: 3,
+                bathrooms: 2,
+                area: 1800,
+                yearBuilt: 2018,
+                features: [
+                    { icon: "concierge-bell", text: "24/7 Concierge" },
+                    { icon: "dumbbell", text: "Fitness Center" },
+                    { icon: "swimming-pool", text: "Rooftop Pool" },
+                    { icon: "elevator", text: "High-Speed Elevators" },
+                    { icon: "wifi", text: "Fiber Internet" },
+                    { icon: "parking", text: "Secure Parking" }
+                ],
+                images: [
+                    "https://images.unsplash.com/photo-1605146769289-440113cc3d00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+                   
+                   
+                   
+                    "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+                    "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1558&q=80",
+                    "https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                ]
+            },
+
+
+
+
+                            
+
+
+
+
+
+
+
+            {
+                id: 4,
+                title: "Premium Downtown Apartment",
+                type: "apartment",
+                location: "Downtown, Lahore",
+                price: 250000,
+                pricePkr: 70000000,
+                description: "Located in the heart of the city, this premium apartment offers convenience and luxury. With high-end finishes, stunning city views, and access to building amenities, this is urban living at its best.",
+                bedrooms: 3,
+                bathrooms: 2,
+                area: 1800,
+                yearBuilt: 2018,
+                features: [
+                    { icon: "concierge-bell", text: "24/7 Concierge" },
+                    { icon: "dumbbell", text: "Fitness Center" },
+                    { icon: "swimming-pool", text: "Rooftop Pool" },
+                    { icon: "elevator", text: "High-Speed Elevators" },
+                    { icon: "wifi", text: "Fiber Internet" },
+                    { icon: "parking", text: "Secure Parking" }
+                ],
+                images: [
+                    "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+                    "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+                    "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1558&q=80",
+                    "https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                ]
+            },
+            {
+                id: 5,
+                title: "Premium Downtown Apartment",
+                type: "apartment",
+                location: "Downtown, Lahore",
+                price: 250000,
+                pricePkr: 70000000,
+                description: "Located in the heart of the city, this premium apartment offers convenience and luxury. With high-end finishes, stunning city views, and access to building amenities, this is urban living at its best.",
+                bedrooms: 3,
+                bathrooms: 2,
+                area: 1800,
+                yearBuilt: 2018,
+                features: [
+                    { icon: "concierge-bell", text: "24/7 Concierge" },
+                    { icon: "dumbbell", text: "Fitness Center" },
+                    { icon: "swimming-pool", text: "Rooftop Pool" },
+                    { icon: "elevator", text: "High-Speed Elevators" },
+                    { icon: "wifi", text: "Fiber Internet" },
+                    { icon: "parking", text: "Secure Parking" }
+                ],
+                images: [
+                    "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+                    "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+                    "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1558&q=80",
+                    "https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                ]
+            },
+            {
+                id: 6,
+                title: "Premium Downtown Apartment",
+                type: "apartment",
+                location: "Downtown, Lahore",
+                price: 250000,
+                pricePkr: 70000000,
+                description: "Located in the heart of the city, this premium apartment offers convenience and luxury. With high-end finishes, stunning city views, and access to building amenities, this is urban living at its best.",
+                bedrooms: 3,
+                bathrooms: 2,
+                area: 1800,
+                yearBuilt: 2018,
+                features: [
+                    { icon: "concierge-bell", text: "24/7 Concierge" },
+                    { icon: "dumbbell", text: "Fitness Center" },
+                    { icon: "swimming-pool", text: "Rooftop Pool" },
+                    { icon: "elevator", text: "High-Speed Elevators" },
+                    { icon: "wifi", text: "Fiber Internet" },
+                    { icon: "parking", text: "Secure Parking" }
+                ],
+                images: [
+                    "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+                    "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+                    "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1558&q=80",
+                    "https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                ]
+            },
+            // Add more properties as needed
+        ];
+
+        // Open modal when View Details is clicked
+        document.querySelectorAll('.property-card .btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const card = this.closest('.property-card');
+                const propertyId = parseInt(card.dataset.id) || 1; // Default to first property if no ID
+                
+                const property = properties.find(p => p.id === propertyId);
+                if (property) {
+                    showPropertyModal(property);
+                }
+            });
+        });
+
+        // Close modal
+        modalClose.addEventListener('click', () => {
+            propertyModal.classList.remove('active');
+        });
+
+        // Close when clicking outside modal
+        propertyModal.addEventListener('click', (e) => {
+            if (e.target === propertyModal) {
+                propertyModal.classList.remove('active');
+            }
+        });
+
+        // Function to show property modal
+        function showPropertyModal(property) {
+            // Create gallery HTML
+            let galleryHTML = `
+                <div class="modal-gallery">
+                    <div class="modal-main-image">
+                        <img src="${property.images[0]}" alt="${property.title}" id="mainImage">
+                    </div>
+                    <div class="modal-thumbnails">
+            `;
+            
+            property.images.forEach((img, index) => {
+                galleryHTML += `
+                    <div class="modal-thumbnail ${index === 0 ? 'active' : ''}" data-image="${img}">
+                        <img src="${img}" alt="Thumbnail ${index + 1}">
+                    </div>
+                `;
+            });
+            
+            galleryHTML += `</div></div>`;
+            
+            // Create details HTML
+            let detailsHTML = `
+                <div class="modal-details">
+                    <div class="modal-price">$${property.price.toLocaleString()} <span>| PKR ${property.pricePkr.toLocaleString()}</span></div>
+                    <h3 class="modal-title">${property.title}</h3>
+                    <div class="modal-location">
+                        <i class="fas fa-map-marker-alt"></i> ${property.location}
+                    </div>
+                    <p class="modal-description">${property.description}</p>
+                    
+                    <div class="modal-features">
+                        <div class="modal-feature">
+                            <i class="fas fa-bed"></i> ${property.bedrooms} Bedrooms
+                        </div>
+                        <div class="modal-feature">
+                            <i class="fas fa-bath"></i> ${property.bathrooms} Bathrooms
+                        </div>
+                        <div class="modal-feature">
+                            <i class="fas fa-ruler-combined"></i> ${property.area} sq.ft
+                        </div>
+                        <div class="modal-feature">
+                            <i class="fas fa-calendar-alt"></i> Year Built: ${property.yearBuilt}
+                        </div>
+                    </div>
+                    
+                    <div class="modal-amenities">
+                        <h4>Amenities</h4>
+                        <div class="amenities-grid">
+            `;
+            
+            property.features.forEach(feature => {
+                detailsHTML += `
+                    <div class="amenity">
+                        <i class="fas fa-${feature.icon}"></i> ${feature.text}
+                    </div>
+                `;
+            });
+            
+            detailsHTML += `
+                        </div>
+                    </div>
+                    
+                    <div class="modal-actions">
+                        <a href="#contact" class="btn">Schedule Viewing</a>
+                        <a href="#contact" class="btn btn-outline">Contact Agent</a>
+                    </div>
+                </div>
+            `;
+            
+            // Combine and insert into modal
+            modalContent.innerHTML = galleryHTML + detailsHTML;
+            
+            // Show modal
+            propertyModal.classList.add('active');
+            
+            // Add thumbnail click events
+            document.querySelectorAll('.modal-thumbnail').forEach(thumb => {
+                thumb.addEventListener('click', function() {
+                    const imgSrc = this.dataset.image;
+                    document.getElementById('mainImage').src = imgSrc;
+                    
+                    document.querySelectorAll('.modal-thumbnail').forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        }
+
+        // Add data-id attributes to property cards (for demo purposes)
+        document.querySelectorAll('.property-card').forEach((card, index) => {
+            card.dataset.id = index + 1;
+        });
+    </script>
+</body>
+</html>
